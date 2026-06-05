@@ -1,0 +1,101 @@
+
+<style>
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+  @keyframes scanline { 0%{top:0} 100%{top:100%} }
+  @keyframes glitch { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-4px)} 40%{transform:translateX(4px)} 60%{transform:translateX(-2px)} 80%{transform:translateX(2px)} }
+  @keyframes progressBad { 0%{width:0%} 60%{width:80%} 80%{width:60%} 100%{width:-10%} }
+  @keyframes shake { 0%,100%{transform:rotate(0)} 20%{transform:rotate(-3deg)} 40%{transform:rotate(3deg)} 60%{transform:rotate(-2deg)} 80%{transform:rotate(2deg)} }
+  @keyframes fadeWhite { 0%{opacity:0} 100%{opacity:1} }
+  @keyframes wiiShop { 0%,100%{letter-spacing:0.05em} 50%{letter-spacing:0.08em} }
+  .glitch-text { animation: glitch 0.3s infinite; display: inline-block; }
+  .blink { animation: blink 1s infinite; }
+  .shake { animation: shake 0.5s infinite; }
+</style>
+
+<div style="background:#0a0a0a; border-radius:12px; padding:2rem; font-family:'Courier New', monospace; color:#e8e8e8; position:relative; overflow:hidden;">
+
+  <div style="position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none;background:repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px);border-radius:12px;"></div>
+
+  <div style="text-align:center; margin-bottom:2rem; padding-bottom:1.5rem; border-bottom:1px solid #333;">
+    <div style="font-size:11px; color:#888; letter-spacing:0.3em; text-transform:uppercase; margin-bottom:0.5rem;">nintendon't presents</div>
+    <div style="font-size:2.2rem; font-weight:bold; color:#fff; letter-spacing:-0.01em; line-height:1;">
+      <span style="color:#e4000f;">Switch</span> <span class="glitch-text" style="color:#fff;">360°</span>
+    </div>
+    <div style="font-size:11px; color:#666; margin-top:0.5rem; letter-spacing:0.1em;">IT'S NOT A STEP FORWARD. IT'S A FULL 360° BACK TO NONSENSE.</div>
+  </div>
+
+  <div style="margin-bottom:1.5rem;">
+    <div style="font-size:10px; color:#e4000f; letter-spacing:0.2em; margin-bottom:0.75rem;">▶ UNOFFICIAL SHOWCASE</div>
+    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px;">
+      <iframe src="https://www.youtube.com/embed/OGXeEOW6koY" title="Nintendo Switch 360 Official Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;"></iframe>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1.5rem;">
+
+    <div style="background:#111; border:1px solid #2a2a2a; border-radius:8px; padding:1rem;">
+      <div style="font-size:10px; color:#e4000f; letter-spacing:0.2em; margin-bottom:0.5rem;">▶ DESIGN</div>
+      <div style="font-size:13px; color:#ccc; line-height:1.6;">Crystal ball form factor. Touchscreen removed because you can't touch things inside a crystal ball.</div>
+      <div style="font-size:11px; color:#666; margin-top:0.5rem; font-style:italic;">*ball is openable but still no touch support</div>
+      <img src="render.png" alt="Nintendo Switch 360 render" style="width:100%; margin-top:0.75rem; border-radius:4px; display:block;">
+    </div>
+
+    <div style="background:#111; border:1px solid #2a2a2a; border-radius:8px; padding:1rem;">
+      <div style="font-size:10px; color:#e4000f; letter-spacing:0.2em; margin-bottom:0.5rem;">▶ NEW JOYSTICK TECH™</div>
+      <div style="font-size:13px; color:#ccc; line-height:1.6;">All inputs multiplied by 360°. Every direction maps to exactly <span style="color:#f5a623; font-weight:bold;">straight up</span>.</div>
+      <div style="background:#0d0d0d; border-radius:4px; padding:0.5rem; margin-top:0.75rem; font-size:11px; color:#888;">
+        ← → ↑ ↓ = ↑<br>
+        <span style="color:#555;">angle × 360 mod 360 = 0</span>
+      </div>
+      <a href="/techdemos/joysticks.html" style="display:inline-block; margin-top:0.75rem; font-size:11px; color:#f5a623; text-decoration:none; border-bottom:1px solid #f5a62366;">Try out the new joystick tech demo →</a>
+      <img src="/techdemos/joysticksTN.png" alt="Nintendo Switch 360 render" style="width:100%; margin-top:0.75rem; border-radius:4px; display:block;">
+    </div>
+
+    <div style="background:#111; border:1px solid #2a2a2a; border-radius:8px; padding:1rem;">
+      <div style="font-size:10px; color:#e4000f; letter-spacing:0.2em; margin-bottom:0.5rem;">▶ SKINEXT™ SENSOR</div>
+      <div style="font-size:13px; color:#ccc; line-height:1.6;">Has ALL Kinect features. Made them worse. Required for every game. Just Dance still has bad tracking.</div>
+      <div style="background:#1a0a00; border:1px solid #3a2000; border-radius:4px; padding:0.4rem 0.6rem; margin-top:0.75rem; font-size:11px; color:#f5a623;">
+        $369 — sold separately
+      </div>
+      <img src="skinext.png" alt="Nintendo Switch 360 render" style="width:100%; margin-top:0.75rem; border-radius:4px; display:block;">
+    </div>
+
+    <div style="background:#111; border:1px solid #2a2a2a; border-radius:8px; padding:1rem;">
+      <div style="font-size:10px; color:#e4000f; letter-spacing:0.2em; margin-bottom:0.5rem;">▶ FEATURES</div>
+      <div style="font-size:12px; color:#888; line-height:1.8;">
+        <span style="color:#ccc;">Internet Browser</span> — worse than Wii's<br>
+        <span style="color:#ccc;">File Manager</span> — can't download anything<br>
+        <span style="color:#ccc;">Developer Mode</span> — locked forever
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#080808; border:1px solid #1a1a1a; border-radius:8px; padding:1.25rem; margin-bottom:1.5rem;">
+    <div style="font-size:10px; color:#e4000f; letter-spacing:0.2em; margin-bottom:0.75rem;">▶ AUTO-ZIP EXTRACTOR (uses 25% of RAM)</div>
+    <div style="font-size:12px; color:#888; margin-bottom:0.75rem;">Downloading from 'https://unforgettable.dk/42.zip'...</div>
+    <div style="background:#0a0a0a; border:1px solid #222; border-radius:4px; height:18px; position:relative; overflow:hidden;">
+      <div style="position:absolute;top:0;left:0;height:100%;background:#e4000f;animation:progressBad 4s infinite;border-radius:4px;"></div>
+    </div>
+    <div style="display:flex; justify-content:space-between; margin-top:0.4rem; font-size:11px; color:#555;">
+      <span>Extracting...</span>
+      <span class="blink">Progress: -42%</span>
+    </div>
+    <div style="margin-top:1rem; text-align:center;">
+      <div style="font-size:11px; color:#555; margin-bottom:0.4rem;">Looks like someone bricked their 360 so we wouldn't have to!</div>
+      <div style="font-size:13px; color:#fff; animation:shake 0.5s infinite; display:inline-block;">💣 ZIP Bob-ombs™ — Auto-ignite enabled</div>
+    </div>
+  </div>
+
+  <div style="background:#fff; border-radius:8px; padding:1.5rem; text-align:center; animation:fadeWhite 2s ease-in;">
+    <div style="font-size:12px; color:#ccc; letter-spacing:0.3em; animation:wiiShop 2s infinite; color:#aaa;">♪ &nbsp; &nbsp; ♩ &nbsp; &nbsp; ♪ &nbsp; &nbsp; ♩</div>
+    <div style="font-size:14px; font-weight:500; color:#222; margin:0.75rem 0 0.25rem; font-family:sans-serif;">At Nintendo, we believe in innovation.</div>
+    <div style="font-size:12px; color:#888; font-family:sans-serif;">And by innovation, we mean making your old problems worse and selling the solutions for more money.</div>
+    <div style="margin-top:1rem; font-size:13px; font-weight:bold; color:#e4000f; font-family:sans-serif;">PREORDER NOW</div>
+    <div style="font-size:10px; color:#bbb; margin-top:0.25rem; font-family:sans-serif;">Coming whenever your dad finally comes back with the milk</div>
+  </div>
+
+  <div style="margin-top:1.5rem; text-align:center; font-size:10px; color:#444; letter-spacing:0.05em;">
+    This page was generated with <a href="https://anthropic.com" style="color:#555; text-decoration:none; border-bottom:1px solid #444;">Claude by Anthropic</a>.</p>"Created" by Adrien <a href="https://youtube.com/@LSPECTRONIZTAR" style="color:#555; text-decoration:none; border-bottom:1px solid #444;">"AdrieNova" / "LSPECTRONIZTAR"</a> Williams for fun
+  </div>
+
+</div>
