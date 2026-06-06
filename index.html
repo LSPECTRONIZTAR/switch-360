@@ -1,5 +1,12 @@
 
 <style>
+  @font-face {
+    font-family: 'Nintendo UDSGR Std 003';
+    src: url("nintendo_udsgr_std_003.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
   @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
   @keyframes scanline { 0%{top:0} 100%{top:100%} }
   @keyframes glitch { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-4px)} 40%{transform:translateX(4px)} 60%{transform:translateX(-2px)} 80%{transform:translateX(2px)} }
@@ -12,16 +19,13 @@
   .shake { animation: shake 0.5s infinite; }
 </style>
 
-<div style="background:#0a0a0a; border-radius:12px; padding:2rem; font-family:'Courier New', monospace; color:#e8e8e8; position:relative; overflow:hidden;">
+<div style="background:#0a0a0a; border-radius:12px; padding:2rem; font-family:'Nintendo UDSGR Std 003', Arial, sans-serif; color:#e8e8e8; position:relative; overflow:hidden;">
 
   <div style="position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none;background:repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px);border-radius:12px;"></div>
 
   <div style="text-align:center; margin-bottom:2rem; padding-bottom:1.5rem; border-bottom:1px solid #333;">
     <div style="font-size:11px; color:#888; letter-spacing:0.3em; text-transform:uppercase; margin-bottom:0.5rem;">nintendon't presents</div>
-    <div style="font-size:2.2rem; font-weight:bold; color:#fff; letter-spacing:-0.01em; line-height:1;">
-      <span style="color:#e4000f;">Switch</span> <span class="glitch-text" style="color:#fff;">360°</span>
-    </div>
-    <div style="font-size:11px; color:#666; margin-top:0.5rem; letter-spacing:0.1em;">IT'S NOT A STEP FORWARD. IT'S A FULL 360° BACK TO NONSENSE.</div>
+    <img src="logo.png" alt="Nintendo Switch 360 logo" style="width:20%; margin:0.75rem auto 0; border-radius:4px; display:block;">
   </div>
 
   <div style="margin-bottom:1.5rem;">
@@ -37,7 +41,7 @@
       <div style="font-size:10px; color:#e4000f; letter-spacing:0.2em; margin-bottom:0.5rem;">▶ DESIGN</div>
       <div style="font-size:13px; color:#ccc; line-height:1.6;">Crystal ball form factor. Touchscreen removed because you can't touch things inside a crystal ball.</div>
       <div style="font-size:11px; color:#666; margin-top:0.5rem; font-style:italic;">*ball is openable but still no touch support</div>
-      <img src="render.png" alt="Nintendo Switch 360 render" style="width:100%; margin-top:0.75rem; border-radius:4px; display:block;">
+      <img src="render.png" alt="Nintendo Switch 360" style="width:100%; margin-top:0.75rem; border-radius:4px; display:block;">
     </div>
 
     <div style="background:#111; border:1px solid #2a2a2a; border-radius:8px; padding:1rem;">
@@ -47,8 +51,10 @@
         ← → ↑ ↓ = ↑<br>
         <span style="color:#555;">angle × 360 mod 360 = 0</span>
       </div>
-      <a href="techdemos/joysticks.html" style="display:inline-block; margin-top:0.75rem; font-size:11px; color:#f5a623; text-decoration:none; border-bottom:1px solid #f5a62366;">Try out the new joystick tech demo →</a>
-      <img src="techdemos/joysticksTN.png" alt="Nintendo Switch 360 render" style="width:100%; margin-top:0.75rem; border-radius:4px; display:block;">
+      <a href="techdemos/joysticks/" style="display:inline-block; margin-top:0.75rem; font-size:11px; color:#f5a623; text-decoration:none; border-bottom:1px solid #f5a62366;">Try out the new joystick tech demo →</a>
+      </p>
+      <div style="font-size:11px; color:#666; margin-top:0.5rem; font-style:italic;">*Requires a game controller of any sort to be connected for the full experience, unless you wanna play without them.</div>
+      <img src="techdemos/joysticks/thumbnail.png" alt="Try out the new joystick tech demo" style="width:100%; margin-top:0.75rem; border-radius:4px; display:block;">
     </div>
 
     <div style="background:#111; border:1px solid #2a2a2a; border-radius:8px; padding:1rem;">
@@ -72,17 +78,16 @@
 
   <div style="background:#080808; border:1px solid #1a1a1a; border-radius:8px; padding:1.25rem; margin-bottom:1.5rem;">
     <div style="font-size:10px; color:#e4000f; letter-spacing:0.2em; margin-bottom:0.75rem;">▶ AUTO-ZIP EXTRACTOR (uses 25% of RAM)</div>
-    <div style="font-size:12px; color:#888; margin-bottom:0.75rem;">Downloading from 'https://unforgettable.dk/42.zip'...</div>
     <div style="background:#0a0a0a; border:1px solid #222; border-radius:4px; height:18px; position:relative; overflow:hidden;">
       <div style="position:absolute;top:0;left:0;height:100%;background:#e4000f;animation:progressBad 4s infinite;border-radius:4px;"></div>
     </div>
     <div style="display:flex; justify-content:space-between; margin-top:0.4rem; font-size:11px; color:#555;">
       <span>Extracting...</span>
-      <span class="blink">Progress: -42%</span>
+      <span class="blink">Progress: -36.0%</span>
     </div>
     <div style="margin-top:1rem; text-align:center;">
-      <div style="font-size:11px; color:#555; margin-bottom:0.4rem;">Looks like someone bricked their 360 so we wouldn't have to!</div>
-      <div style="font-size:13px; color:#fff; animation:shake 0.5s infinite; display:inline-block;">💣 ZIP Bob-ombs™ — Auto-ignite enabled</div>
+      <div style="font-size:13px; color:#fff; animation:shake 0.5s infinite; display:inline-block;">Comes with our own spin* on malware — 💣 ZIP Bob-ombs™!</div>
+            <div style="font-size:11px; color:#555; margin-bottom:0.4rem;">*pun not intended... or is it?</div>
     </div>
   </div>
 
@@ -94,8 +99,15 @@
     <div style="font-size:10px; color:#bbb; margin-top:0.25rem; font-family:sans-serif;">Coming whenever your dad finally comes back with the milk</div>
   </div>
 
+  <div style="text-align:center; margin-top:1.5rem; padding-top:1.5rem; border-top:1px solid #333;"> 
+    <div style="font-size:2.2rem; font-weight:bold; color:#fff; letter-spacing:-0.01em; line-height:1;">
+      <span style="color:#e4000f;">Nintendo Switch</span> <span class="glitch-text" style="color:#fff;">360°</span>
+    </div>
+    <div style="font-size:11px; color:#666; margin-top:0.5rem; letter-spacing:0.1em;">IT'S NOT A STEP FORWARD. IT'S A FULL 360° BACK TO NONSENSE.</div>
+  </div>
+
   <div style="margin-top:1.5rem; text-align:center; font-size:10px; color:#444; letter-spacing:0.05em;">
-    This page was generated with <a href="https://anthropic.com" style="color:#555; text-decoration:none; border-bottom:1px solid #444;">Claude by Anthropic</a>.</p>"Created" by Adrien <a href="https://youtube.com/@LSPECTRONIZTAR" style="color:#555; text-decoration:none; border-bottom:1px solid #444;">"AdrieNova" / "LSPECTRONIZTAR"</a> Williams for fun
+    This webpage (which is still a work-in-progress) IS ALL A JOKE ISTG and was mostly generated with <a href="https://anthropic.com" style="color:#555; text-decoration:none; border-bottom:1px solid #444;">Claude by Anthropic</a>.</p>"Created" by Adrien <a href="https://youtube.com/@LSPECTRONIZTAR" style="color:#555; text-decoration:none; border-bottom:1px solid #444;">"AdrieNova" / "LSPECTRONIZTAR"</a> Williams for fun.</p>Font used is available on <a href="https://font.download/font/nintendoudsg-rstd003" style="color:#555; text-decoration:none; border-bottom:1px solid #444;">font.download</a>.</div>
   </div>
 
 </div>
